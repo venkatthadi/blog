@@ -13,19 +13,24 @@
       </ul>
     </div>
   <% end %>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <%= form.text_field :title, class: "form-control", placeholder: 'article title' %>
+    <%# <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> %>
+  </div>
  
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
- 
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Text</span>
+    </div>
+    <%= form.text_area :text, class: "form-control" %>
+    <%# <textarea class="form-control" aria-label="With textarea"></textarea> %>
+  </div><br/>
+  <center>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
+  </center>
  
 <% end %>

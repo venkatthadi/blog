@@ -1,10 +1,12 @@
 <%# <%= link_to 'new article', new_article_path %> 
 
-<table>
+<table class="table table-striped">
     <tr>
-        <th>Title</th>
-        <th>text</th>
-        <th></th>
+        <th scope="col">Title</th>
+        <th scope="col">text</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     </tr>
 
     <% @articles.each do |article| %>
